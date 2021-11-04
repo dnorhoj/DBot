@@ -38,8 +38,6 @@ module.exports = {
 
                 if (command.data.options.length > 0 && command.data.options[0].constructor.name == 'f') { // Check if command has subcommand
                     command.data.options.forEach(subCommand => {
-                        console.log(subCommand);
-
                         let usage = `${command.data.name} ${subCommand.name}`
 
                         subCommand.options.forEach(option => {
